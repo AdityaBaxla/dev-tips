@@ -16,6 +16,9 @@ setx path “%path%;”C:\Android\cmdline-tools;C:\Android\cmdline-tools\tools;C
 
 setx to set path variables from cmd.
 
+`$flutter doctor`
+check what needs to be installed
+
 install sdk from sdkmanager
 
 ````sdkmanager “system-images;android-28;default;x86_64”
