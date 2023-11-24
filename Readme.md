@@ -22,3 +22,6 @@ sdkmanager “platform-tools”
 sdkmanager "build-tools;28.0.3"
 sdkmanager "platforms;android-28"
 sdkmanager emulator`
+
+attach flutter to android sdk
+`flutter config --android-sdk C:\Android\`
