@@ -30,3 +30,6 @@ sdkmanager emulator```
 attach flutter to android sdk
 `flutter config --android-sdk C:\Android\`
 ````
+
+flutter run
+first time takes time to use android phone as device. need to turn on usb install, give all permissions, etc.
