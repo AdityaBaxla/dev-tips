@@ -9,19 +9,21 @@ android sdk needs to have folders inside /latest otherwise it wont run. try goin
 
 add flutter path, android, androidsdk, androidstudio sdk, .. bin. to path
 
-`setx JAVA_HOME “C:\Android\openjdk”
+```setx JAVA_HOME “C:\Android\openjdk”
 setx ANDROID_HOME “C:\Android”
 setx path “%path%;”C:\Android\cmdline-tools;C:\Android\cmdline-tools\tools;C:\Android\cmdline-tools\tools\bin;C:\Android\flutter\bin”`
-`
+```
 
 setx to set path variables from cmd.
 
 install sdk from sdkmanager
-`sdkmanager “system-images;android-28;default;x86_64”
+
+````sdkmanager “system-images;android-28;default;x86_64”
 sdkmanager “platform-tools”
 sdkmanager "build-tools;28.0.3"
 sdkmanager "platforms;android-28"
-sdkmanager emulator`
+sdkmanager emulator```
 
 attach flutter to android sdk
 `flutter config --android-sdk C:\Android\`
+````
