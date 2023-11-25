@@ -33,3 +33,16 @@ attach flutter to android sdk
 
 flutter run
 first time takes time to use android phone as device. need to turn on usb install, give all permissions, etc.
+
+note: flutter is just java but 40 years younger, means less weirdites and less legacy to worry about. still strongly typed but less verbose.
+
+scaffold: skeleteon widget that keeps everything together
+container : flexible widet that can do a lot of things , set height and width
+
+shortcut : stl -> compontent with stateless widget
+
+assets have to be manually loaded in pubspec.yaml
+assets:
+	- assets 
+
+routing problem, changed homepage to snakecase to fix the issue, main.dart also changed to add routers but did not help
