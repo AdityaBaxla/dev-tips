@@ -1,5 +1,16 @@
 commands: 
 
+## how to delete gh-pages
+$ git push origin :gh-pages
+
+## paper trail personal repo
+- add issue in github
+- git brach branch-name-to-fix
+- git checkout branch-name-to-fix
+- git add
+- git commit -m "bal bal"
+- git push origin/branch-name-to-fix
+- open new pull request
 
 
 
@@ -19,6 +30,10 @@ export default defineConfig({
 base: reponame  with double back slash
 
 use this link to deploy vite app : https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane
+
+https://stackoverflow.com/questions/74518887/blank-page-when-deploying-a-react-app-to-github-pages-and-vite#comment131543640_74518887
+
+
 
 basically 
 
@@ -46,3 +61,13 @@ add to package.json
 ...
 ```
 and then run command npm run deploy to keep it simple.
+~im hopeful this works~
+
+## finally what works:
+- delete github pages
+- prefix dist path
+- goto github pages settings and select branch gh-pages
+
+### onTabChange not working
+not imported this on top of constructor :  void Function(int)? onTabChange;
+### check const where there are state changes

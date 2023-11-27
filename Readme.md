@@ -46,3 +46,5 @@ assets:
 	- assets 
 
 routing problem, changed homepage to snakecase to fix the issue, main.dart also changed to add routers but did not help
+
+use serve to run production code from react/vite
