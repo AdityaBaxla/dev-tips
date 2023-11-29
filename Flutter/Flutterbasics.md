@@ -2,7 +2,12 @@
 
 
 appbar : AppBar()
+body: 
 drawer: MySideBar()    ... return Drawer()
+
+all the dependencies have to be added in pubspec.yaml
+
+
 
 
 container for gen stuff like <div>

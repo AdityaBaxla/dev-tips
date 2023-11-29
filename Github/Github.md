@@ -5,11 +5,12 @@ $ git push origin :gh-pages
 
 ## paper trail personal repo
 - add issue in github
-- git brach branch-name-to-fix
+- git branch branch-name-to-fix
 - git checkout branch-name-to-fix
 - git add
 - git commit -m "bal bal"
-- git push origin/branch-name-to-fix
+- git push --set-upstream origin branch-name-to-fix
+- git push origin/branch-name-tofix
 - open new pull request
 
 
