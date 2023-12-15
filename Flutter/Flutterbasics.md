@@ -50,3 +50,5 @@ flutter pub add http
 ### safe area to avoid notches 
 
 ### image.asset to load image from a file
+
+wow
