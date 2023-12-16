@@ -41,3 +41,10 @@ public int compareTo(T o);
 ```
 actually after seeing the code, we just need the compareTo method
 
+### how to actually implement comparable 
+```java
+ @Override
+    public int compareTo(Student other) {
+        return Integer.compare(this.marks, other.marks);
+    }
+```
