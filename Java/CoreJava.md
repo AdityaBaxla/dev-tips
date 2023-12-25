@@ -4,7 +4,7 @@ if running using interpredted mode $java FileName.java , the class containing ps
 
 if you dont want to handle the error or you want to funciton to throw a excepton, add "throws WhaeverException" in the funciton heading; otherwise it wont compile if it knows that the function is throwing an error.
 
-if you dont override the "toString" method of child class, when printed e, format is "Packagename.ExceptionName: exception message pass to super(msg)" 
+if you dont override the "toString" method of child class, when printed e, format is "Packagename.ExceptionName: exception message pass to super(msg)"
 do better in core java yes no
 
 cloneable: a unique function in java
@@ -13,8 +13,10 @@ cloneable: a unique function in java
 -can only implement when implements Clonable
 -should throw CloneNotSupportedException
 
-Date obj  (dose_two.getTime() - dose_one.getTime() ) / (1000*60*60*24)
+Date obj (dose_two.getTime() - dose_one.getTime() ) / (1000*60*60\*24)
+
 ### check if java stream is empty?
+
 ```java
 public boolean isEmpty(Stream<Student> st) {
         return (st.count() == 0);
@@ -24,6 +26,7 @@ public boolean isEmpty(Stream<Student> st) {
 dont use == for String comparision ... use .equals
 
 see this code before exam:
+
 ```java
 try {
             i_arr[i] = v;
@@ -35,17 +38,25 @@ try {
 ```
 
 if implementing Comparable interface, we should override compareTO and equals method
+
 ```java
 public int compareTo(T o);
 
 ```
+
 actually after seeing the code, we just need the compareTo method
 
-### how to actually implement comparable 
+### how to actually implement comparable
+
 ```java
  @Override
     public int compareTo(Student other) {
         return Integer.compare(this.marks, other.marks);
     }
 ```
-oppo
+
+opp
+
+this is so awsome core java is the best
+the quick brown fox jumped over the lazy dog
+the quick brown fox jumped over the lazy dog
