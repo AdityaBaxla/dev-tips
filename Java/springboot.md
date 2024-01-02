@@ -9,3 +9,5 @@ Groovy, Java, Kotlin -> programming languages
 Group : use the domain name you control
 Artifact : 
 Name : project name
+
+it should be unique
