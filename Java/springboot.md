@@ -11,3 +11,7 @@ Artifact :
 Name : project name
 
 it should be unique
+
+Java is very verbose language
+
+
