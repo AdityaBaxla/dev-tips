@@ -12,6 +12,5 @@ Name : project name
 
 it should be unique
 
-Java is very verbose language
-
+Java is very verbose language wow
 
