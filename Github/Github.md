@@ -1,4 +1,7 @@
 commands: 
+### how to push code to github
+$git push origin main
+syntax : git push <remote> <branch-name>
 
 ## how to delete gh-pages
 $ git push origin :gh-pages
@@ -72,3 +75,26 @@ and then run command npm run deploy to keep it simple.
 ### onTabChange not working
 not imported this on top of constructor :  void Function(int)? onTabChange;
 ### check const where there are state changes
+
+### linking git and github
+setup username 
+$ git config --global user.name
+setup email
+$ git config --global user.email
+
+make a repo on github using + icon
+
+echo "# lib-management" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AdityaBaxla/lib-management.git
+git push -u origin main : -u for setup of tracking subsiquent push can be done by : git push
+
+## git errors,
+if .git folder is there in the file and you get "fatal git not a  repository". your head is most likely corrupt.
+if new repo:
+$rm -rf .git
+$git init
+
