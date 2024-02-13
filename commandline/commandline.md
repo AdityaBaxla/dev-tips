@@ -25,3 +25,6 @@ mv <oldname> <newname>
 
 ## nextline
 if you pree '\' then enter then command will not execute
+
+## How to quit applications
+-alt+F2
