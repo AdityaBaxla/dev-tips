@@ -92,6 +92,18 @@ git branch -M main
 git remote add origin https://github.com/AdityaBaxla/lib-management.git
 git push -u origin main : -u for setup of tracking subsiquent push can be done by : git push
 
+## installing github in termux android
+```
+pkg install gh git
+and
+
+gh auth login
+then
+
+gh repo clone <some-repo>
+# or
+git clone <some-repo>.git
+```
 ## git errors,
 if .git folder is there in the file and you get "fatal git not a  repository". your head is most likely corrupt.
 if new repo:
