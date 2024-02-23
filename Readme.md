@@ -55,4 +55,5 @@ need .prettierrc and .prettierignore files in project
 add all .gitignore to .prettierignore and src files
 goo to > open user settings as json . add `"editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,`
+prettier dev dependencies : $npm i -D eslint prettier eslint-config-prettier eslint-plugin-react
     
