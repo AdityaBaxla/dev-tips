@@ -48,3 +48,11 @@ assets:
 routing problem, changed homepage to snakecase to fix the issue, main.dart also changed to add routers but did not help
 
 use serve to run production code from react/vite
+
+### prettier config
+add prettier extention
+need .prettierrc and .prettierignore files in project
+add all .gitignore to .prettierignore and src files
+goo to > open user settings as json . add `"editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,`
+    
