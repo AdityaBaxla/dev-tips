@@ -18,3 +18,13 @@ Click Disabled on the new shortcut
 ## add file to path in ubuntu
 `export PATH=$PATH:/path/to/file`
 `source ~/.bashrc` -> save temporary config permanantely
+
+## add alias in wsl for windows explorer
+alias explorer="/mnt/c/Windows/explorer.exe"
+
+## dont allow windwos path in wsl inevironment
+in the file
+/etc/wsl.conf
+add the lines 
+[interop]
+appendWindowsPath = false
