@@ -25,6 +25,8 @@ alias explorer="/mnt/c/Windows/explorer.exe"
 ## dont allow windwos path in wsl inevironment
 in the file
 /etc/wsl.conf
+
 add the lines 
+
 [interop]
 appendWindowsPath = false
