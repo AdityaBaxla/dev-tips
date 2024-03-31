@@ -28,5 +28,7 @@ in the file
 
 add the lines 
 
+```
 [interop]
 appendWindowsPath = false
+```
