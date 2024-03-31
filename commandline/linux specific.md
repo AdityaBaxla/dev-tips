@@ -14,3 +14,7 @@ Click the + symbol at the bottom of the window
 Enter gnome-system-monitor as the command
 Click Apply
 Click Disabled on the new shortcut 
+
+## add file to path in ubuntu
+`export PATH=$PATH:/path/to/file`
+`source ~/.bashrc` -> save temporary config permanantely
