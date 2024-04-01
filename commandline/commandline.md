@@ -28,3 +28,14 @@ if you pree '\' then enter then command will not execute
 
 ## How to quit applications
 -alt+F2
+
+## Using venv and requirement in python
+```
+python -m venv .venv
+.\.venv\Scripts\activate -> windows
+source .venv/bin/activate -> linux
+after installing all the dependencies
+pip freeze > requirement.txt
+for installing all the dependencies
+pip install -r .\requirements.txt
+```
