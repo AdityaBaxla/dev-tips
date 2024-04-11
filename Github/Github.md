@@ -115,4 +115,9 @@ if .git folder is there in the file and you get "fatal git not a  repository". y
 if new repo:
 $rm -rf .git
 $git init
-
+a
+## creating new branch from cli and pushing it to github
+git branch <branch-name>
+git checkout <branch-name>
+git branch (to confirm you are in the right branch)
+git push --set-upstream origin <branch-name> (to create this branch in github)
