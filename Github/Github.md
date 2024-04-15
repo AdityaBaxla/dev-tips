@@ -85,17 +85,27 @@ $ git config --global user.email
 make a repo on github using + icon
 
 echo "# lib-management" >> README.md
+
 git init
+
 git add README.md
+
 git commit -m "first commit"
+
 git branch -M main
+
 git remote add origin https://github.com/AdityaBaxla/lib-management.git
+
 git push -u origin main : -u for setup of tracking subsiquent push can be done by : git push
 
 ## getting the current git branch upto date with latest commit
+
 git branch // make sure you are in the correct branch
+
 git checkout branchnamae // if needed change branch
+
 git fetch // get commit data to git
+
 git pull // reflect changes in you files
 
 ## installing github in termux android
