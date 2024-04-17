@@ -135,3 +135,11 @@ git push --set-upstream origin <branch-name> (to create this branch in github)
 ```
 ## Clone a particular branch from github
 `git clone -b <branchname> <remote-repo-url>`
+
+## Get your current branch uptodate with main/ another branch
+```
+git status
+git fetch origin main
+git merge origin/main
+git push origin <your_branch_name>
+```
