@@ -133,3 +133,5 @@ git checkout <branch-name>
 git branch (to confirm you are in the right branch)
 git push --set-upstream origin <branch-name> (to create this branch in github)
 ```
+## Clone a particular branch from github
+`git clone -b <branchname> <remote-repo-url>`
