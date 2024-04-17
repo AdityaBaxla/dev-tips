@@ -39,3 +39,6 @@ pip freeze > requirement.txt
 for installing all the dependencies
 pip install -r .\requirements.txt
 ```
+
+## remove directory with subfiles and folder 
+`rmdir /s <directory name>`
