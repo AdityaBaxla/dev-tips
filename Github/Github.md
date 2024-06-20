@@ -143,3 +143,7 @@ git fetch origin main
 git merge origin/main
 git push origin <your_branch_name>
 ```
+## create a new local branch and push it to github creating a new upstream branch
+```
+git push --set-upstream origin session-4-dashboard&features
+```
