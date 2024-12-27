@@ -39,7 +39,7 @@ npm init -y
 ### **Install Dependencies**
 ```bash
 # Electron dependencies
-npm install electron electron-builder --save-dev
+npm install electron  --save-dev
 
 # Vue 3 with Vite
 npm create vite@latest renderer -- --template vue
