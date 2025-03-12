@@ -56,7 +56,6 @@ And list all users:
 \du
 ```
 
-Let me know if you need further clarification! 🚀
 
 You can check your PostgreSQL database table values without using pgAdmin by using the following methods:
 
@@ -96,4 +95,13 @@ pip install pgcli
 pgcli -h localhost -p 5432 -U postgres -d my_database
 ```
 
-Let me know if you need help with something specific! 🚀
+# create a new Postgres container inside docker
+
+```bash
+docker run --name new_postgres_db \
+  -e POSTGRES_USER=newuser \
+  -e POSTGRES_PASSWORD=password \
+  -e POSTGRES_DB=db_name \
+  -d -p 5433:5434 postgres
+```
+change the names and ports and necessary
