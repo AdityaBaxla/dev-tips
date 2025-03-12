@@ -105,3 +105,105 @@ docker run --name new_postgres_db \
   -d -p 5433:5434 postgres
 ```
 change the names and ports and necessary
+
+## Interactive shell in docker
+
+```bash
+docker exec -it new_postgres_db bash
+```
+
+# makind a pg server tables and data with the pg dump inside docker
+
+It looks like the `.sql` file is not inside the container. You need to first copy the file into the container before running the command. Here’s how to fix it:
+
+---
+
+### **1️⃣ Copy the SQL File into the Container**
+From your **host machine**, run:
+```sh
+docker cp mentorship.sql new_postgres_db:/mentorship.sql
+```
+This will copy `mentorship.sql` into the root directory (`/`) of the `new_postgres_db` container.
+
+---
+
+### **2️⃣ Verify the File is Inside the Container**
+Run an interactive shell inside the container:
+```sh
+docker exec -it new_postgres_db bash
+```
+Then inside the container, check if the file exists:
+```sh
+ls -l /
+```
+If it’s not in `/`, you may need to check inside another directory like `/var/lib/postgresql/`.
+
+---
+
+### **3️⃣ Run the SQL File Inside the Container**
+Once confirmed, execute the `.sql` file using:
+```sh
+docker exec -i new_postgres_db psql -U newuser -d mentorship-dump -f /mentorship.sql
+```
+
+---
+
+### **4️⃣ Alternative: Directly Load from Your Host**
+If you don’t want to copy the file, you can also run:
+```sh
+cat mentorship.sql | docker exec -i new_postgres_db psql -U newuser -d mentorship-dump
+```
+
+---
+
+### **5️⃣ Verify That the Database is Created**
+After execution, connect to your database and check:
+```sh
+psql -h localhost -p 5433 -U newuser -d mentorship-dump
+```
+Then list tables:
+```sql
+\dt
+```
+
+Great! Since you can see the `mentorship.sql` file inside the container, you should be able to execute it with `psql`.  
+
+### **Run the SQL File**
+Inside your host machine (not inside the container), execute:  
+```sh
+docker exec -i new_postgres_db psql -U newuser -d mentorship-dump -f /mentorship.sql
+```
+This will run the `.sql` file and create the necessary database objects.
+
+---
+
+### **Alternative: Run from Inside the Container**
+If you're already inside the container (using `docker exec -it new_postgres_db bash`), you can run:  
+```sh
+psql -U newuser -d mentorship-dump -f /mentorship.sql
+```
+
+---
+
+### **Verify Database Import**
+Once the command runs successfully, check if the tables were created by connecting to the database:  
+```sh
+psql -U newuser -d mentorship-dump
+```
+Then list the tables:  
+```sql
+\dt
+```
+
+If you get any errors, let me know! 🚀
+
+### Load data
+```bash
+docker exec -it new_postgres_db psql -U newuser -d postgres -c "CREATE DATABASE \"mentorship-dump\" OWNER newuser;"
+```
+
+### start a container
+```bash
+docker start new_postgres_db
+
+```
