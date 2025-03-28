@@ -205,5 +205,9 @@ docker exec -it new_postgres_db psql -U newuser -d postgres -c "CREATE DATABASE 
 ### start a container
 ```bash
 docker start new_postgres_db
+```
 
+### Get inside the postgress container with postgress running
+```bash
+docker exec -it new_postgres_db psql -U newuser -d mentorship-dump
 ```
