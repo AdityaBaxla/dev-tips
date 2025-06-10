@@ -51,6 +51,11 @@ exit
 ssh <username>@<ip-address>
 ```
 
+### 5. Restart the server
+```bash
+sudo reboot
+```
+
 ---
 
 ## 🔑 SSH Key Authentication Setup
@@ -105,6 +110,11 @@ PasswordAuthentication no
 
 ```bash
 sudo systemctl restart sshd
+```
+
+or 
+```bash
+sudo systemctl restart ssh
 ```
 
 ---
