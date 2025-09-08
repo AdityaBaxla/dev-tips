@@ -28,7 +28,7 @@
 
 You'll typically create a new server block configuration file in Nginx's `sites-available` directory and then symlink it to `sites-enabled`.
 
-1.  **Create a New Configuration File:**
+1.  **Create a New Configuration File:**z
     Navigate to the Nginx configuration directory.
     * **Debian/Ubuntu:** `/etc/nginx/sites-available/`
     * **CentOS/RHEL:** `/etc/nginx/conf.d/` (you'd typically create a `.conf` file directly here)
